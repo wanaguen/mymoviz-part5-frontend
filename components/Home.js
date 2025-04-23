@@ -12,7 +12,7 @@ function Home() {
 
 
   useEffect(() => {
-    fetch('https://mymoviz-part5-backend-omega.vercel.app/')
+    fetch('https://mymoviz-part5-backend-omega.vercel.app/movies')
       .then(response => response.json())
       .then(data => {
         setMoviesData(data.movies);
